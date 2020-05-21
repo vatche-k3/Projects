@@ -1,0 +1,33 @@
+h1.title {
+    text-align: center;
+}
+
+form.input{
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.loading{
+    text-align: center;
+}
+
+div.thoughts{
+    width: 80%;
+}
+
+body {
+    background-color: lightsteelblue;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
