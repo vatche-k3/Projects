@@ -1,0 +1,74 @@
+1. Get your program to find all files in a directory and print out their names 
+Test:
+	Input : File or Directory Name
+	Output :  
+		If incorrect format or file : This is not a file
+		If Directory : Printed all files in directory
+		If File : Printed out not directory with name of File
+2. Get your program to recursively descend down all subdirectories and print out their names with paths 
+	open all files and output them to stdout to test 
+	Test:
+		Input : File or Directory Name
+		Output :  
+		Incorrect input format or file : This is not a file
+		Correct input if Directory : Printed all files with paths in directory
+		Correct input if File : Printed out not directory with name of File
+
+	open all files and write them to writeFile.test to test 
+	Test:
+		Input: File or Directory Name
+		Correct Input if file: all tokens in file would be written to writeFile
+		Correct Input if directory: all tokens of files in directory would be written to writeFile
+3. Build List of tokens from write file and count the frequency of each token 
+	Create list with tokens 
+	Test:
+		Input: Directory or file.
+		Output: List of tokens
+
+	count the number of occurrences of each token read in from files by decrementing when removing duplicates and incrementing when creating new nodes
+Test:
+	Input: Directory or file
+	Output: List of Tokens with frequency next to each token
+4. Check Arguments with flags
+	3 args //only can be build codebook with one file
+	Test:
+		Input ./a.out  -b <fileName>
+		Output: Build
+	4 args //either decompress compress single file or recursive build
+	Test:
+		Input ./a.out -d  <fileName> codebook
+		Output: decompress
+		Input ./a.out -d  <fileName> codebook
+		Output: compress
+		Input ./a.out -r -b  <fileName> 
+		Output: build codebook with content from all files
+	5 args //recursive compress
+		Test:
+			Input ./a.out -r -d <filename> codebook
+			Output: recursive decompress
+5. Build the minHeap
+	Create an array of nodes containing the frequency and the token.
+	Test:
+		Put in different lists of tokens and their frequencies and printed them out to see if they followed the conventions of a minHeap.
+		Used a smaller list first and then used larger lists to see if the results were consistent.
+6. Build the Huffman Codebook
+	Creates the HuffmanCodebook.txt file with the given minHeap
+	Test:
+		Put in a list of just words and not whitespace
+		Then we put in a list of words and spaces, tabs, newlines
+		Then we used larger lists.
+7. Compress
+	Compresses a given file or multiple files in one or multiple directories
+	Test:
+		First we passed in a single file
+		Then we passed in one directory with a subdirectory and a file in each directory
+		Then we used directories with multiple files and subdirectories
+8. Decompress
+	decompresses a given file or multiple files in one or multiple directories
+	Test:
+		First we passed in a single file
+		Then we passed in one directory with a subdirectory and a file in each directory
+		Then we used directories with multiple files and subdirectories
+
+
+
